@@ -85,6 +85,9 @@ class BurgerBuilder extends Component {
           showModal:false
       })
   }
+  successOrder = () => { 
+    alert("Order has been placed!");
+  }
 
   render() {
     const disabledIngredients = {
@@ -98,7 +101,11 @@ class BurgerBuilder extends Component {
       <Aux>
 
         <Modal showModal={this.state.showModal} closeModal={this.closeModal}>
-            <OrderSummary ingredients={this.state.ingredients} />
+            <OrderSummary ingredients={this.state.ingredients} 
+              handleSuccessClick={this.successOrder}
+              handleCancelClick={this.closeModal}
+              price={this.state.price}
+            />
         </Modal>
         <Burger ingredients={this.state.ingredients} />
         <BuildControls

@@ -1,0 +1,8 @@
+.Nav{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    list-style: none;
+    box-sizing: border-box;
+
+}
