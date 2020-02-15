@@ -1,0 +1,25 @@
+.Menu {
+    height: 100%;
+    align-items: center;
+}
+
+.HamburgerMenu {
+    height: 100%;
+    align-items: center;
+    font-size: x-large;
+    color: whitesmoke;
+
+}
+
+@media (max-width:499px){
+    .Menu{
+        display: none;
+    }
+}
+
+@media (man-width:499px){
+    .HamburgerMenu{
+        display: none;
+    }
+}
+

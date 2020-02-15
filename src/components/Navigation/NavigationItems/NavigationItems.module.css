@@ -1,8 +1,29 @@
-.Nav{
-    display: flex;
+/* .Nav{
     height: 100%;
     align-items: center;
     list-style: none;
     box-sizing: border-box;
 
+} */
+
+.Nav{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    list-style: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 32px;
+}
+
+@media (min-width:500px){
+    .Nav{
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        flex-flow: row;
+        align-content: center;
+    }
 }
