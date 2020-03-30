@@ -20,3 +20,13 @@
 .Logo {
     height: 80%;
 }
+.Menu{
+    font-size: large;
+    color: white;
+}
+
+@media(max-width : 499px){
+    .DesktopOnly {
+        display: none;
+    }
+}
